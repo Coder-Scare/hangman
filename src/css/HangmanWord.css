@@ -1,0 +1,13 @@
+.Hangman-word-container {
+    display: flex;
+    gap: .25em;
+    font-size: 6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: monospace;
+}
+
+.Hangman-word {
+    border-bottom: 0.1em solid white;
+    
+}

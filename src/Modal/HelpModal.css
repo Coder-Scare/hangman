@@ -1,0 +1,100 @@
+body.active-modal {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.btn-modal {
+    padding: 10px 20px;
+    margin-left: 30px;
+    font-size: 1.5rem !important;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Itim', cursive;
+}
+
+.btn-modal:hover {
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.btn-modal:focus {
+    border: 1px blue solid;
+    background-color: hsl(275, 100%, 75%);
+}
+
+.modal, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 100;
+}
+
+.overlay {
+    background: rgba(49,49,49,0.8);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #f1f1f1;
+    padding: 14px 28px;
+    border-radius: 3px;
+    max-width: 800px;
+    min-width: 600px;
+    color: black;
+}
+
+.modal-content h2 {
+    font-size: 2rem;
+    padding-left: 30px;
+}
+
+.instructions {
+    list-style: none;
+    padding-right: 20px;
+}
+
+.modal-content li {
+    font-size: 1.3rem;
+    padding: 20px 0 0px;
+}
+
+.tip {
+    font-weight: 600;
+}
+
+.modal-content h4 {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px 15px;
+    font-weight: 600;
+    font-size: 2.5rem !important;
+    cursor: pointer;
+    color: red;
+    border: none !important;
+    background: inherit !important;
+    transition: all .2s ease-in-out;
+}
+
+.close-modal:hover {
+    background-color: #9b9b9b;
+    transform: scale(1.2);
+
+}
+

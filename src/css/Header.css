@@ -1,0 +1,97 @@
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6.5rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.hangman-title-container {
+    text-align: center;
+}
+
+.hangman-title-container h1 {
+    font-size: 2.5rem;
+}
+
+.hangman-title-container p {
+    font-size: 1.4rem;
+}
+
+.menu-items-container {
+    position: absolute;
+    display: flex;
+    top: 1.8rem;
+    right: 8rem;
+}
+
+.menu-items-container button {
+    padding: 10px 20px;
+    margin-left: 30px;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: rgb(255, 255, 255);
+    transition: all .2s ease-in-out;
+}
+
+.menu-items-container button:hover {
+    transform: scale(1.2);
+}
+
+button:focus {
+    background-color: hsl(275, 100%, 75%);
+}
+
+.restartGame {
+    font-size: 3.5rem !important;
+    background-color: transparent !important;
+    color: rgb(255, 255, 255);
+    position: relative;
+    bottom: 5px;
+    transition: all .2s ease-in-out;
+    padding: 0 !important;
+}
+
+.restartGame:hover {
+    transform: scale(1.2);
+    color: rgb(190, 66, 228);
+}
+
+
+@media only screen and (max-width: 1500px) {
+    .menu-items-container {
+        top: 10px;
+        right: 10px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .header-container {
+        height: 10rem;
+        justify-content: space-between;
+    }
+
+    .hangman-title-container {
+        text-align: left;
+        padding-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .header-container {
+        height: 15rem;
+        flex-direction: row;
+    }
+
+    .menu-items-container {
+        top: 12rem;
+        right: 10px;
+    }
+
+}
+

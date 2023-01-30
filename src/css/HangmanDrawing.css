@@ -1,0 +1,33 @@
+.hangman-container {
+    position: relative;
+}
+
+.bottom-bar {
+    height: 10px;
+    width: 250px;
+    background: black ;
+}
+
+.upright-bar {
+    height: 400px;
+    width: 10px;
+    background-color: black;
+    margin-left: 120px;
+}
+
+.top-bar {
+    width: 200px;
+    height: 10px;
+    background-color: black;
+    margin-left: 120px;
+}
+
+.hang-bar {
+    width: 10px;
+    height: 50px;
+    background-color: black;
+    margin-left: 120px;    
+    position: absolute;
+    top: 0;
+    right: 0;
+}
